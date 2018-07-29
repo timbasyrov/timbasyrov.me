@@ -1,0 +1,21 @@
+{
+  "name": "timbasyrov.me",
+  "version": "1.0.0",
+  "description": "local environment for minification and bundling",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-size": "^3.0.0",
+    "gulp-uglify": "^3.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Timur Basyrov",
+  "license": "ISC"
+}

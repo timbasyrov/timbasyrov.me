@@ -1,0 +1,418 @@
+body {
+    font-family: "Consolas", monospace;
+}
+
+/* MENU */
+
+#menu li {
+    display:inline-block;
+    margin: 5px;
+    color: rgb(0, 160, 0);
+}
+#menu li.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: rgb(0, 160, 0);
+}
+
+#menu li a:hover {
+    color: limegreen;
+}
+
+#menu li.active a:hover {
+    color: limegreen;
+}
+
+#menu li a,
+#menu li.active a {
+    padding: 9px 18px;
+    display:block;
+}
+
+#menu li.active a {
+    color: limegreen;
+}
+
+#menu {
+    position:fixed;
+    top:0;
+    left:0;
+    height: 40px;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin:0;
+    min-width: 400px;
+}
+
+/* TYPEWRITER STYLES */
+#ascii {
+    width: 50%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: left; 
+    color:rgb(0, 160, 0);
+    font-weight: normal;
+    font-size: 0.7vw;
+}   
+
+#typewrite-title {
+    margin: 0;
+    font-family: "Consolas";
+}
+
+#typewrite-info {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.8vw;
+}
+
+.rectangle-cursor:after {
+    content: "▮";
+    animation: blink 500ms linear infinite alternate;
+}
+
+/* SKILLS SECTION */
+.skills-diagram {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    margin: 25px 0 0 0;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 100;
+}
+
+.skills-diagram div {
+    display: inline-block;
+    border-width: 0;
+    border-radius: 50%;
+    transform: scale(1.2);
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    transition: 0.2s all;
+    vertical-align: top;
+}
+
+.skills-diagram div:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.skills-diagram .skill-c-sharp {
+    width: 11em;
+    height: 11em;
+    line-height: 11em;
+    vertical-align: middle;
+    background-color: rgba(255, 166, 0, 0.5);
+}
+
+.skills-diagram .skill-asp-net {
+    width: 14em;
+    height: 14em;
+    line-height: 14em;
+    background-color: rgba(138, 43, 226, 0.5);
+}
+
+.skills-diagram .skill-js {
+    width: 8.5em;
+    height: 8.5em;
+    line-height: 8.5em;
+    vertical-align: bottom;
+    background-color: rgba(244, 248, 6, 0.5);
+}
+
+.skills-diagram .skill-html-css {
+    width: 7.5em;
+    height: 7.5em;
+    line-height: 7.5em;
+    background-color: rgba(0, 128, 0, 0.5);
+}
+
+.skills-diagram .skill-database {
+    width: 8.5em;
+    height: 8.5em;
+    line-height: 8.5em;
+    vertical-align: bottom;
+    background-color: rgba(128, 0, 128, 0.5);
+}
+
+.skills-diagram .skill-cleancode {
+    width: 6.5em;
+    height: 6.5em;
+    line-height: 6.5em;
+    background-color: rgba(128, 4, 0, 0.5);
+}
+
+.skills-description {
+    height: 25%;
+    width: 25%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    color: white;
+    font-size: 1em;
+    font-weight: normal;
+    font-family: "Consolas", monospace;
+}
+
+/* CONTACT SECTION */
+
+#section2 {
+    color: white;
+}
+
+.profile-wrapper {
+    width: 50%;
+    height: 50%;
+    min-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile .ava {
+    text-align: center;
+    width: 30%;
+    float: left;
+    min-height: 200px;
+}
+
+.profile .ava img {
+    max-width: 100%;
+    max-height: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.profile .info {        
+    width: 70%;
+    max-width: 600px;
+    min-height: 200px;
+    margin-left: 30%;
+    text-align: left;
+    padding-left: 25px;
+}
+
+.profile .info hr {
+    color: green;
+    border: 0;
+    height: 1px;
+    background-color: green;
+}
+
+.linkbox {
+    margin: 15px 15px;
+    float: left;
+    font-size: 40pt;
+}
+
+.linkbox a {
+    color: white;
+}
+
+/* ANIMATION  */
+
+@-webkit-keyframes blink {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+}
+
+/* ADAPTIVE */
+
+@media screen and (max-width: 550px) {
+    
+    .skills-diagram {
+        font-size: 11px;
+        text-align: center;
+        color: white;
+        margin: 25px 0 0 0;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 100;
+    }
+
+    .skills-diagram .skill-c-sharp {
+        width: 9.5em;
+        height: 9.5em;
+        line-height: 9.5em;
+        vertical-align: middle;
+    }
+    
+    .skills-diagram .skill-asp-net {
+        width: 11em;
+        height: 11em;
+        line-height: 11em;
+    }
+    
+    .skills-diagram .skill-js {
+        width: 7em;
+        height: 7em;
+        line-height: 7em;
+        vertical-align: bottom;
+    }
+
+    .skills-diagram .skill-html-css {
+        width: 6em;
+        height: 6em;
+        line-height: 6em;
+    }
+    
+    .skills-diagram .skill-database {
+        width: 7em;
+        height: 7em;
+        line-height: 7em;
+    }
+    
+    .skills-diagram .skill-cleancode {
+        width: 6em;
+        height: 6em;
+        line-height: 6em;
+    }
+    
+    .skills-description {
+        height: 25%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        color: white;
+        font-size: 0.9em;
+        font-weight: normal;
+    }
+
+    /* CONTACT */
+
+    .profile .ava {
+        float: none;
+        width: 100%;
+        min-height: 0;
+        text-align: center;
+    }
+
+    .profile .ava img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .profile .info {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        font-size: 0.9em;
+    }
+
+    .profile-wrapper {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .links {
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .linkbox {
+        margin: 10px 10px;
+        float: left;
+        font-size: 30pt;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    
+    .skills-diagram {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    #ascii {
+        margin-left: -50%;
+        height: 70%;
+        width: 100%;
+        font-size: 2vw;
+        color: rgb(0, 160, 0);
+    }
+
+    #typewrite-info {
+        width: 100%;
+        margin-left: 55%;
+        font-size: 2.9vw;
+    }
+
+    .skills-description {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 1200px) {
+    #ascii {
+        width: 80%;
+        font-size: 1.2vw;
+    }
+
+    #typewrite-info {
+        font-size: 1.5vw;
+    }
+
+    .skills-description {
+        width: 60%;
+    }
+
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1536px) {
+    #ascii {
+        font-size: 0.9vw;
+    }
+
+    #typewrite-info {
+        font-size: 1vw;
+    }
+
+    .skills-description {
+        width: 50%;
+    }
+
+}
