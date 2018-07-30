@@ -146,9 +146,9 @@ body, pre {
 }
 
 .skills-diagram .skill-cleancode {
-    width: 6.5em;
-    height: 6.5em;
-    line-height: 6.5em;
+    width: 6.9em;
+    height: 6.9em;
+    line-height: 6.9em;
     background-color: rgba(128, 4, 0, 0.5);
 }
 
@@ -171,7 +171,7 @@ body, pre {
 }
 
 .profile-wrapper {
-    width: 60%;
+    width: 50%;
     height: 50%;
     min-width: 500px;
     margin-left: auto;
@@ -198,11 +198,10 @@ body, pre {
 .profile .info {        
     width: 70%;
     max-width: 600px;
-    min-width: 500px;
     min-height: 200px;
     margin-left: 30%;
     text-align: left;
-    padding-left: 5px;
+    padding-left: 25px;
 }
 
 .profile .info hr {
@@ -213,9 +212,13 @@ body, pre {
 }
 
 .linkbox {
-    margin: 15px 15px;
+    margin: 15px 10px;
     float: left;
     font-size: 40pt;
+}
+
+.links {
+    width: 400px;    
 }
 
 .links .mcp-logo {
@@ -338,8 +341,7 @@ body, pre {
     }
 
     .profile .info {
-        width: 85%;
-        min-width: 370px;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
         padding-left: 0;
@@ -347,12 +349,12 @@ body, pre {
     }
 
     .profile-wrapper {
-        min-width: 400px;
+        min-width: 100%;
         width: 100%;
     }
 
     .links {
-        width: 350px;
+        width: 300px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -395,26 +397,6 @@ body, pre {
     .skills-description {
         width: 80%;
     }
-
-    .profile .ava {
-        float: none;
-        width: 100%;
-        min-height: 0;
-        text-align: center;
-    }
-
-    .profile .info {
-        width: 85%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 0;
-    }
-
-    .profile-wrapper {
-        min-width: 400px;
-        width: 100%;
-    }
-
 }
 
 @media screen and (min-width: 751px) and (max-width: 1200px) {
@@ -429,10 +411,6 @@ body, pre {
 
     .skills-description {
         width: 60%;
-    }
-
-    .profile-wrapper {
-        width: 95%;
     }
 
 }
