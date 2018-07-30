@@ -1,5 +1,6 @@
-body {
-    font-family: "Consolas", monospace;
+body, pre {
+    font-family: "Fira Mono", monospace;
+    font-weight: 400;
 }
 
 /* MENU */
@@ -11,7 +12,7 @@ body {
 }
 #menu li.active {
     text-decoration: underline;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 #menu li a {
@@ -58,12 +59,11 @@ body {
     text-align: left; 
     color:rgb(0, 160, 0);
     font-weight: normal;
-    font-size: 0.7vw;
+    font-size: 0.65vw;
 }   
 
 #typewrite-title {
     margin: 0;
-    font-family: "Consolas";
 }
 
 #typewrite-info {
@@ -80,7 +80,7 @@ body {
 
 /* SKILLS SECTION */
 .skills-diagram {
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     color: white;
     margin: 25px 0 0 0;
@@ -162,7 +162,6 @@ body {
     color: white;
     font-size: 1em;
     font-weight: normal;
-    font-family: "Consolas", monospace;
 }
 
 /* CONTACT SECTION */
@@ -368,16 +367,16 @@ body {
 
 @media screen and (max-width: 750px) {
     #ascii {
-        margin-left: -50%;
+        margin-left: -47%;
         height: 70%;
         width: 100%;
-        font-size: 2vw;
+        font-size: 1.7vw;
         color: rgb(0, 160, 0);
     }
 
     #typewrite-info {
         width: 100%;
-        margin-left: 55%;
+        margin-left: 50%;
         font-size: 2.9vw;
     }
 
@@ -389,7 +388,7 @@ body {
 @media screen and (min-width: 751px) and (max-width: 1200px) {
     #ascii {
         width: 80%;
-        font-size: 1.2vw;
+        font-size: 1vw;
     }
 
     #typewrite-info {
