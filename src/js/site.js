@@ -5,12 +5,12 @@ var App = {
 		var skillDescriptionContainer = document.getElementsByClassName('skills-description')[0];
 		
 		var skillsDescriptionList = {
-			'skill-asp-net': 'ASP.NET is my main working tool. As a backend-developer I use it in many projects. Work with classic ASP.NET MVC and ASP.NET Core MVC as well',
-			'skill-c-sharp': 'C Sharp description',
-			'skill-js': 'JS skill description',
-			'skill-html-css': 'HTML&amp;CSS skill description',
-			'skill-database': 'Database skill description',
-			'skill-cleancode': 'Clean code skill description'
+			'skill-asp-net': 'The development of applications based on ASP.NET framework is my main focus. I work with both ASP.NET and ASP.NET Core.',
+			'skill-c-sharp': 'I use C# as my main programming language. I prefer to use modern versions (C# 6/7), but I can also work with legacy code.',
+			'skill-js': 'Good skills in vanilla.js, jQuery. Have experience in creating single page applications using ractive.js library.',
+			'skill-html-css': 'As a backend developer, I pay more attention to server-side technologies, but I have some skills in frontend development as well. For UI in my personal projects I prefer to use Bootstrap library. And I don\'t use tables for markup layouts :)',
+			'skill-database': 'I worked with different relational database management systems: MS SQL Server, MySQL, PostgreSQL. As a data access technology, I prefer to use the Entity Framework, but I can also use plain SQL if it is necessary. Have experience with NoSQL solutions, e.g. Couchbase.',
+			'skill-cleancode': 'I know how to keep it simple and don\'t repeat myself. S.O.L.I.D. skills in object-oriented design.'
 		}
 
 		for (var i = 0; i < skills.length; i++) {
@@ -45,7 +45,7 @@ var App = {
 					? setTimeout(type, 500)
 					: setTimeout(type, typeSpeed);				
 			} else {
-				if (callback && typeof callback === "function") {
+				if (callback && typeof callback === 'function') {
 					callback();
 				}
 			}
