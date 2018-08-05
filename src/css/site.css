@@ -52,7 +52,7 @@ body, pre {
 
 /* TYPEWRITER STYLES */
 #ascii {
-    width: 50%;
+    width: 55%;
     height: 60%;
     margin-left: auto;
     margin-right: auto; 
@@ -344,8 +344,8 @@ body, pre {
     }
 
     .profile .ava img {
-        max-width: 150px;
-        max-height: 150px;
+        max-width: 100px;
+        max-height: 100px;
     }
 
     .profile .info {
