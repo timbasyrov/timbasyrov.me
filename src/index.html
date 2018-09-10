@@ -22,13 +22,13 @@
     <body>
         
         <ul id="menu">
-            <li data-menuanchor="start" class="active"><a href="#start">Start</a></li>
-            <li data-menuanchor="skills"><a href="#skills">Skills</a></li>
-            <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+            <li data-menuanchor="start" style="display: none"><a href="#start">Start</a></li>
+            <li data-menuanchor="aboutme"><a href="#aboutme">About me</a></li>
+            <li data-menuanchor="skills" class="active"><a href="#skills">Skills</a></li>
         </ul>
             
         <div id="fullpage">
-            <div class="section active" id="section0">
+            <div class="section hidden" id="section0">
                 <div id="ascii">
 <pre id="typewrite-title" class="rectangle-cursor">
 NmmmNNo.-:::::::::::::::::::---..-:.odNdmmNN
@@ -63,19 +63,8 @@ NNNNh.Nmmy:sooooooo////:oooooosss:mmNosNmmmN
 # Driven by joy of creation
 </pre>
                 </div>
-            </div>
-            <div class="section" id="section1">
-                <div class="skills-diagram">
-                    <div class="skill-asp-net">ASP.NET</div>
-                    <div class="skill-c-sharp">C#</div>
-                    <div class="skill-js">JS</div>
-                    <div class="skill-html-css">HTML&amp;CSS</div>
-                    <div class="skill-database">Database</div>
-                    <div class="skill-cleancode">Clean&nbsp;code</div>
-                </div>
-                <div class="skills-description"></div>
-            </div>            
-            <div class="section" id="section2">
+            </div>         
+            <div class="section visible active" id="section1">
                 <div class="profile-wrapper">
                     <div class="profile">
                         <div class="ava">
@@ -118,6 +107,17 @@ NNNNh.Nmmy:sooooooo////:oooooosss:mmNosNmmmN
                     </div>
                 </div>
             </div>
+            <div class="section visible" id="section2">
+                <div class="skills-diagram">
+                    <div class="skill-asp-net">ASP.NET</div>
+                    <div class="skill-c-sharp">C#</div>
+                    <div class="skill-js">JS</div>
+                    <div class="skill-html-css">HTML&amp;CSS</div>
+                    <div class="skill-database">Database</div>
+                    <div class="skill-cleancode">Clean&nbsp;code</div>
+                </div>
+                <div class="skills-description"></div>
+            </div>
         </div>
 
         <!-- build:js -->
@@ -126,8 +126,11 @@ NNNNh.Nmmy:sooooooo////:oooooosss:mmNosNmmmN
         <!-- endbuild -->
         <script type="text/javascript">
             var myFullpage = new fullpage('#fullpage', {
-                sectionsColor: ['#000', '#263238', '#2e3a44'],
-                anchors: ['start', 'skills', 'contact'],
+                // sectionsColor: ['#000', '#263238', '#2e3a44'],
+                // anchors: ['start', 'skills', 'contact'],
+                sectionsColor: ['#2e3a44', '#263238'],
+                sectionSelector: '.section.visible',
+                anchors: ['aboutme', 'skills'],
                 menu: '#menu',
                 lazyLoad: true,
                 resize: false,

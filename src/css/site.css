@@ -50,6 +50,10 @@ body, pre {
     min-width: 400px;
 }
 
+.hidden {
+    display: none;
+}
+
 /* TYPEWRITER STYLES */
 #ascii {
     width: 55%;
@@ -166,7 +170,7 @@ body, pre {
 
 /* CONTACT SECTION */
 
-#section2 {
+#section1 {
     color: white;
 }
 
